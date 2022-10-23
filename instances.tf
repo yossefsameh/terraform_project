@@ -40,7 +40,7 @@ resource "aws_instance" "app-server" {
   }
 }
 
-resource "null_resource" "test_null" {
+resource "null_resource" "test2_null" {
     provisioner "local-exec" {
     command = "echo The bastion's public IP address is ${aws_instance.basion-server.public_ip}"
   }
